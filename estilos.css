@@ -1,0 +1,57 @@
+*{
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background:url('grass.jpg');
+    background-size: cover;
+}
+
+
+:root{
+    --formHeight: 25px;
+    --inputColor: lightblue;
+}
+
+.wrapper{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+form{
+    padding:20px;
+}
+
+input[type="submit"]{
+    width:10%;
+    height:var(--formHeight);
+    background: var(--inputColor)
+}
+
+input[type="number"]{
+    height:var(--formHeight);
+    background: var(--inputColor)
+}
+
+.photoList{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap:10px;
+    color:white;
+    font-size:30px;
+}
+
+.photo img {
+    width:100%;
+    height:100%;
+    padding: 10px;
+}
+
+h1{
+    color:white;
+    font-weight: 600;
+}
